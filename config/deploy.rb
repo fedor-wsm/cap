@@ -1,14 +1,30 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
+set :stages, ["production"]
+set :default_stage, "production"
+set :ssh_options, {:forward_agent => true}
+
 set :application, "my_test_app"
 set :repo_url, "git@github.com:fedor-wsm/cap.git"
+set :user, "fedor-wsm"
 
-# Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-
-# Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/vhosts/yellow.curs.net/httpdocs"
+
+
+namespace :deploy do
+
+
+    desc 'Print The Server Name'
+    task :print_server_name do
+      on roles(:app), in: :groups, limit:1 do
+        execute "hostname"
+      end
+    end
+
+end
+
+after "deploy:updated", "deploy:print_server_name"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

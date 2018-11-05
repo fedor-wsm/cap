@@ -7,7 +7,9 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-
+set :branch, "master"
+server "plesk12", user: "yellow", roles: %w{web app db}
+set :deploy_to, "/var/www/vhosts/yellow.curs.net/httpdocs"
 
 # role-based syntax
 # ==================
