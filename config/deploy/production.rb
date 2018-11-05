@@ -9,7 +9,7 @@
 
 set :branch, "master"
 server "plesk12", user: "yellow", roles: %w{web app db}
-set :deploy_to, "/var/www/vhosts/yellow.curs.net/httpdocs"
+set :deploy_to, "/var/www/vhosts/yellow.curs.net"
 
 # role-based syntax
 # ==================
@@ -44,10 +44,10 @@ set :deploy_to, "/var/www/vhosts/yellow.curs.net/httpdocs"
 # Global options
 # --------------
 #  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
-#    auth_methods: %w(password)
-#  }
+#  keys: %w(/home/user/.ssh/all_centos),
+#  forward_agent: false,
+#  auth_methods: %w(publickey password)
+#}
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------

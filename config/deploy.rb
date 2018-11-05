@@ -7,9 +7,9 @@ set :ssh_options, {:forward_agent => true}
 
 set :application, "my_test_app"
 set :repo_url, "git@github.com:fedor-wsm/cap.git"
-set :user, "fedor-wsm"
+#set :user, "fedor-wsm"
 
-set :deploy_to, "/var/www/vhosts/yellow.curs.net/httpdocs"
+set :deploy_to, "/var/www/vhosts/yellow.curs.net"
 
 
 namespace :deploy do

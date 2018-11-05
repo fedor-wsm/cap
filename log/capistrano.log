@@ -1,0 +1,132 @@
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-05 20:37:58 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8fd392f5] Running /usr/bin/env mkdir -p /tmp as yellow@plesk12
+ DEBUG [8fd392f5] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-05 20:38:14 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [50bdd437] Running /usr/bin/env mkdir -p /tmp as yellow@plesk12
+ DEBUG [50bdd437] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-05 20:38:22 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d07369fc] Running /usr/bin/env mkdir -p /tmp as yellow@plesk12
+ DEBUG [d07369fc] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-05 20:39:15 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f3d0529b] Running /usr/bin/env mkdir -p /tmp as yellow@plesk12
+ DEBUG [f3d0529b] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-05 20:39:24 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5d81f036] Running /usr/bin/env mkdir -p /tmp as yellow@plesk12
+ DEBUG [5d81f036] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-05 20:39:37 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5d8c0a7a] Running /usr/bin/env mkdir -p /tmp as yellow@plesk12
+ DEBUG [5d8c0a7a] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-05 20:47:00 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b94f8438] Running /usr/bin/env mkdir -p /tmp as yellow@plesk12
+ DEBUG [b94f8438] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-05 21:27:45 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a5cbe694] Running /usr/bin/env mkdir -p /tmp as yellow@plesk12
+ DEBUG [a5cbe694] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8aae59e0] Finished in 3.063 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-my_test_app-production-deathless.sh 0.0%
+  INFO Uploading /tmp/git-ssh-my_test_app-production-deathless.sh 100.0%
+  INFO [1441e493] Running /usr/bin/env chmod 700 /tmp/git-ssh-my_test_app-production-deathless.sh as yellow@plesk12
+ DEBUG [1441e493] Command: /usr/bin/env chmod 700 /tmp/git-ssh-my_test_app-production-deathless.sh
+  INFO [97048cc1] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [8b20c80c] Running /usr/bin/env git ls-remote git@github.com:fedor-wsm/cap.git HEAD as yellow@plesk12
+ DEBUG [8b20c80c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_test_app-production-deathless.sh" ; /usr/bin/env git ls-remote git@github.com:fedor-wsm/cap.git HEAD )
+ DEBUG [e2e3d388] 	796aab3af09b8b4c25f6c856bb0f9a2f041c95da	HEAD
+  INFO [e2e3d388] Finished in 4.803 seconds with exit status 0 (successful).
+  INFO [fb8e2170] Running /usr/bin/env mkdir -p /var/www/vhosts/yellow.curs.net/shared /var/www/vhosts/yellow.curs.net/releases as yellow@plesk12
+ DEBUG [fb8e2170] Command: /usr/bin/env mkdir -p /var/www/vhosts/yellow.curs.net/shared /var/www/vhosts/yellow.curs.net/releases
+  INFO [8c27ace3] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [83f6360e] Running [ -f /var/www/vhosts/yellow.curs.net/current/REVISION ] as yellow@plesk12
+ DEBUG [83f6360e] Command: [ -f /var/www/vhosts/yellow.curs.net/current/REVISION ]
+ DEBUG [7446b150] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [000bbc94] Running [ -f /var/www/vhosts/yellow.curs.net/repo/HEAD ] as yellow@plesk12
+ DEBUG [000bbc94] Command: [ -f /var/www/vhosts/yellow.curs.net/repo/HEAD ]
+ DEBUG [8ee59d78] Finished in 0.050 seconds with exit status 1 (failed).
+ DEBUG [9788255b] Running if test ! -d /var/www/vhosts/yellow.curs.net; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net'" 1>&2; false; fi as yellow@plesk12
+ DEBUG [9788255b] Command: if test ! -d /var/www/vhosts/yellow.curs.net; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net'" 1>&2; false; fi
+ DEBUG [15e60b80] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [0973323c] Running /usr/bin/env git clone --mirror git@github.com:fedor-wsm/cap.git /var/www/vhosts/yellow.curs.net/repo as yellow@plesk12
+ DEBUG [0973323c] Command: cd /var/www/vhosts/yellow.curs.net && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_test_app-production-deathless.sh" ; /usr/bin/env git clone --mirror git@github.com:fedor-wsm/cap.git /var/www/vhosts/yellow.curs.net/repo )
+ DEBUG [475a47bd] 	Initialized empty Git repository in /var/www/vhosts/yellow.curs.net/repo/
+  INFO [475a47bd] Finished in 4.829 seconds with exit status 0 (successful).
+ DEBUG [093caf77] Running if test ! -d /var/www/vhosts/yellow.curs.net/repo; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/repo'" 1>&2; false; fi as yellow@plesk12
+ DEBUG [093caf77] Command: if test ! -d /var/www/vhosts/yellow.curs.net/repo; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/repo'" 1>&2; false; fi
+ DEBUG [ba83e1ae] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [143d560f] Running /usr/bin/env git remote set-url origin git@github.com:fedor-wsm/cap.git as yellow@plesk12
+ DEBUG [143d560f] Command: cd /var/www/vhosts/yellow.curs.net/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_test_app-production-deathless.sh" ; /usr/bin/env git remote set-url origin git@github.com:fedor-wsm/cap.git )
+  INFO [87f88dcf] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [1e607544] Running /usr/bin/env git remote update --prune as yellow@plesk12
+ DEBUG [1e607544] Command: cd /var/www/vhosts/yellow.curs.net/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_test_app-production-deathless.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [0175e1b0] 	Fetching origin
+  INFO [0175e1b0] Finished in 4.741 seconds with exit status 0 (successful).
+ DEBUG [655d77c7] Running if test ! -d /var/www/vhosts/yellow.curs.net/repo; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/repo'" 1>&2; false; fi as yellow@plesk12
+ DEBUG [655d77c7] Command: if test ! -d /var/www/vhosts/yellow.curs.net/repo; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/repo'" 1>&2; false; fi
+ DEBUG [f7fef28a] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [a0b1d3e4] Running /usr/bin/env mkdir -p /var/www/vhosts/yellow.curs.net/releases/20181105182753 as yellow@plesk12
+ DEBUG [a0b1d3e4] Command: cd /var/www/vhosts/yellow.curs.net/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_test_app-production-deathless.sh" ; /usr/bin/env mkdir -p /var/www/vhosts/yellow.curs.net/releases/20181105182753 )
+  INFO [365fa9e3] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [d02a231e] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/vhosts/yellow.curs.net/releases/20181105182753 as yellow@plesk12
+ DEBUG [d02a231e] Command: cd /var/www/vhosts/yellow.curs.net/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_test_app-production-deathless.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/vhosts/yellow.curs.net/releases/20181105182753 )
+ DEBUG [cf5ffaa9] 	tar: 
+ DEBUG [cf5ffaa9] 	Capfile: time stamp 2018-11-05 12:06:09 is 3510213.663080747 s in the future
+ DEBUG [cf5ffaa9] 	
+ DEBUG [cf5ffaa9] 	tar: 
+ DEBUG [cf5ffaa9] 	config/deploy.rb: time stamp 2018-11-05 12:06:09 is 3510213.660702205 s in the future
+ DEBUG [cf5ffaa9] 	
+ DEBUG [cf5ffaa9] 	tar: 
+ DEBUG [cf5ffaa9] 	config/deploy/production.rb: time stamp 2018-11-05 12:06:09 is 3510213.658587766 s in the future
+ DEBUG [cf5ffaa9] 	
+ DEBUG [cf5ffaa9] 	tar: 
+ DEBUG [cf5ffaa9] 	config/deploy/staging.rb: time stamp 2018-11-05 12:06:09 is 3510213.657640994 s in the future
+tar: config/deploy: time stamp 2018-11-05 12:06:09 is 3510213.657115065 s in the future
+tar: config: time stamp 2018-11-05 12:06:09 is 3510213.657030138 s in the future
+tar: index.html: time stamp 2018-11-05 12:06:09 is 3510213.656834838 s in the future
+  INFO [cf5ffaa9] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [1477a76b] Running if test ! -d /var/www/vhosts/yellow.curs.net/repo; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/repo'" 1>&2; false; fi as yellow@plesk12
+ DEBUG [1477a76b] Command: if test ! -d /var/www/vhosts/yellow.curs.net/repo; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/repo'" 1>&2; false; fi
+ DEBUG [954ab416] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [0c641926] Running /usr/bin/env git rev-list --max-count=1 master as yellow@plesk12
+ DEBUG [0c641926] Command: cd /var/www/vhosts/yellow.curs.net/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_test_app-production-deathless.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d547b864] 	796aab3af09b8b4c25f6c856bb0f9a2f041c95da
+ DEBUG [d547b864] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [1027b634] Running if test ! -d /var/www/vhosts/yellow.curs.net/releases/20181105182753; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/releases/20181105182753'" 1>&2; false; fi as yellow@plesk12
+ DEBUG [1027b634] Command: if test ! -d /var/www/vhosts/yellow.curs.net/releases/20181105182753; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/releases/20181105182753'" 1>&2; false; fi
+ DEBUG [ffd2fb4f] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [843503ea] Running /usr/bin/env echo "796aab3af09b8b4c25f6c856bb0f9a2f041c95da" > REVISION as yellow@plesk12
+ DEBUG [843503ea] Command: cd /var/www/vhosts/yellow.curs.net/releases/20181105182753 && /usr/bin/env echo "796aab3af09b8b4c25f6c856bb0f9a2f041c95da" > REVISION
+  INFO [f2e01f51] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [20dc048d] Running /usr/bin/env hostname as yellow@plesk12
+ DEBUG [20dc048d] Command: /usr/bin/env hostname
+ DEBUG [a6476e0d] 	plesk12.curs.net
+  INFO [a6476e0d] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [87605286] Running /usr/bin/env ln -s /var/www/vhosts/yellow.curs.net/releases/20181105182753 /var/www/vhosts/yellow.curs.net/releases/current as yellow@plesk12
+ DEBUG [87605286] Command: /usr/bin/env ln -s /var/www/vhosts/yellow.curs.net/releases/20181105182753 /var/www/vhosts/yellow.curs.net/releases/current
+  INFO [28a875e7] Finished in 0.019 seconds with exit status 0 (successful).
+  INFO [fb6cc994] Running /usr/bin/env mv /var/www/vhosts/yellow.curs.net/releases/current /var/www/vhosts/yellow.curs.net as yellow@plesk12
+ DEBUG [fb6cc994] Command: /usr/bin/env mv /var/www/vhosts/yellow.curs.net/releases/current /var/www/vhosts/yellow.curs.net
+  INFO [a5ff149b] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [267e8b48] Running /usr/bin/env ls -x /var/www/vhosts/yellow.curs.net/releases as yellow@plesk12
+ DEBUG [267e8b48] Command: /usr/bin/env ls -x /var/www/vhosts/yellow.curs.net/releases
+ DEBUG [2e83f1c3] 	20181105182753
+ DEBUG [2e83f1c3] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [05c2a28f] Running if test ! -d /var/www/vhosts/yellow.curs.net/releases; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/releases'" 1>&2; false; fi as yellow@plesk12
+ DEBUG [05c2a28f] Command: if test ! -d /var/www/vhosts/yellow.curs.net/releases; then echo "Directory does not exist '/var/www/vhosts/yellow.curs.net/releases'" 1>&2; false; fi
+ DEBUG [a63ff03f] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [ad10722c] Running /usr/bin/env echo "Branch master (at 796aab3af09b8b4c25f6c856bb0f9a2f041c95da) deployed as release 20181105182753 by deathless" >> /var/www/vhosts/yellow.curs.net/revisions.log as yellow@plesk12
+ DEBUG [ad10722c] Command: cd /var/www/vhosts/yellow.curs.net/releases && /usr/bin/env echo "Branch master (at 796aab3af09b8b4c25f6c856bb0f9a2f041c95da) deployed as release 20181105182753 by deathless" >> /var/www/vhosts/yellow.curs.net/revisions.log
+  INFO [c056f701] Finished in 0.053 seconds with exit status 0 (successful).
